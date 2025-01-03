@@ -22,7 +22,7 @@ const Contact = () => {
       <h1 className="text-5xl font-semibold">Contact</h1>
       <h1 className="text-lg text-gray-500">Reach Out Me</h1>
       <div className="flex justify-center mt-10   min-h-calc[100vh] px-4">
-        <div className=" shadow-lg   bg-secondaryColor rounded-lg p-6 w-full max-w-[50%] border border-solid border-white">
+        <div className=" shadow-lg   bg-secondaryColor rounded-lg p-6 w-full lg:max-w-[50%] max-w-[95%]  border border-solid border-white">
           <h2 className="text-2xl  bg-secondaryColor font-bold text-start ">
             Let's get in touch. Leave me your message.
           </h2>
@@ -94,28 +94,30 @@ const Contact = () => {
           </form>
         </div>
       </div>
-      <div className=" flex mt-40 items-center">
+      <div className=" lg:flex mt-20 lg:mt-40 items-center">
         <h1 className="text-xl">connect with me on social media:</h1>
-        <a href="https://www.facebook.com/sunil.sapkota.7161953">
-          <div className="flex h-10 w-10">
-            <img src="/fb.svg" alt="" />
-          </div>
-        </a>
-        <a href="https://www.instagram.com/sapkota268/">
-          <div className="flex h-7 w-10">
-            <img src="/insta.webp" alt="" />
-          </div>
-        </a>
-        <a href="https://github.com/sapkotasunil">
-          <div className="flex h-7 w-10">
-            <img src="/github.svg" alt="" />
-          </div>
-        </a>
-        <a href="https://www.linkedin.com/in/sunil-sapkota-88026a32a/">
-          <div className="flex h-10 w-10">
-            <img src="/linkdln.svg" alt="" />
-          </div>
-        </a>
+        <div className="flex items-center">
+          <a href="https://www.facebook.com/sunil.sapkota.7161953">
+            <div className="flex h-10 w-10">
+              <img src="/fb.svg" alt="" />
+            </div>
+          </a>
+          <a href="https://www.instagram.com/sapkota268/">
+            <div className="flex h-7 w-10">
+              <img src="/insta.webp" alt="" />
+            </div>
+          </a>
+          <a href="https://github.com/sapkotasunil">
+            <div className="flex h-7 w-10">
+              <img src="/github.svg" alt="" />
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/sunil-sapkota-88026a32a/">
+            <div className="flex h-10 w-10">
+              <img src="/linkdln.svg" alt="" />
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   );
