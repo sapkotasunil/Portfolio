@@ -8,11 +8,11 @@ import { animate } from "motion/mini";
 const Header = () => {
   return (
     <>
-      <nav className=" sm:hidden lg:flex justify-between  mt-8 text-xl ">
+      <nav className="  lg:flex justify-between  mt-8 text-xl ">
         <Link className="font-logoFont font-semibold" to="/">
           Sunil
         </Link>
-        <div className="flex gap-10 justify-center items-center">
+        <div className="flex   gap-10 justify-center items-center pr -20">
           <NavLink to="/">Home</NavLink>
           <NavLink to="/about">About</NavLink>
           <NavLink to="/projects">Projects</NavLink>
