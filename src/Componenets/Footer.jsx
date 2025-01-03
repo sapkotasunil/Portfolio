@@ -10,10 +10,10 @@ const Footer = () => {
           className="w-screen h-16 flex justify-between items-center border-solid border-primaryColor drop-shadow-lg border-t  "
         >
           <div className=" text-xl font-logoFont">Sunil</div>
-          <div className="flex items-center gap-1 ">
+          {/* <div className="flex items-center gap-1 ">
             <FaCopyright />
             Copyright@2025
-          </div>
+          </div> */}
           <div className="flex gap-1 items-center ">
             <a href="https://www.facebook.com/sunil.sapkota.7161953">
               <div className=" flex h-10 w-10">
