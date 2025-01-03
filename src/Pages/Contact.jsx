@@ -21,7 +21,7 @@ const Contact = () => {
     <div className=" pt-8">
       <h1 className="text-5xl font-semibold">Contact</h1>
       <h1 className="text-lg text-gray-500">Reach Out Me</h1>
-      <div className="flex justify-center mt-10   min-h-calc[100vh] px-4">
+      <div className="flex justify-center mt-10   min-h-[40vh] px-4">
         <div className=" shadow-lg   bg-secondaryColor rounded-lg p-6 w-full lg:max-w-[50%] max-w-[95%]  border border-solid border-white">
           <h2 className="text-2xl  bg-secondaryColor font-bold text-start ">
             Let's get in touch. Leave me your message.
@@ -80,7 +80,7 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleChange}
                 placeholder="Your Message"
-                rows="4"
+                rows="2"
                 required
                 className="mt-1 block w-full  bg-secondaryColor p-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
               ></textarea>
