@@ -11,7 +11,7 @@ import { ScrollText } from "./Componenets/ScrollText";
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="md:px-5 lg:px-24">
+      <div className="px-5 lg:px-24">
         <Header />
 
         <Routes>

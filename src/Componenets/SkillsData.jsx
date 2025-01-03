@@ -18,60 +18,47 @@ const SkillsData = () => {
           Skills
         </h1>
       </div>
-      <div>
-        <div className="flex justify-between pr-4 py-4">
+      <div className="max-w-[95vw]">
+        <div className="flex flex-col lg:flex-row gap-6  justify-between  pr-4 py-4">
           <Skills
             icon={
-              <FaHtml5 className="h-24 w-36 bg-secondaryColor text-yellow-500" />
+              <FaHtml5 className="min-h-full h-24 w-36 bg-secondaryColor" />
             }
             skillName={"HTML"}
           />
+
           <Skills
-            icon={
-              <FaCss3Alt className="h-24 w-36 bg-secondaryColor text-yellow-500" />
-            }
+            icon={<FaCss3Alt className="h-24 w-36 bg-secondaryColor" />}
             skillName={"CSS"}
           />
         </div>
-        <div className="flex justify-between pr-4 py-4">
+        <div className=" justify-between flex flex-col lg:flex-row gap-6 pr-4 py-4">
           <Skills
-            icon={
-              <IoLogoJavascript className="h-24 w-36 bg-secondaryColor text-yellow-500" />
-            }
+            icon={<IoLogoJavascript className="h-24 w-36 bg-secondaryColor" />}
             skillName={"JavaScript"}
           />
           <Skills
-            icon={
-              <RiTailwindCssFill className="h-24 w-36 bg-secondaryColor text-yellow-500" />
-            }
+            icon={<RiTailwindCssFill className="h-24 w-36 bg-secondaryColor" />}
             skillName={"Tailwind"}
           />
         </div>
-        <div className="flex justify-between pr-4 py-4">
+        <div className="flex flex-col lg:flex-row gap-6 justify-between pr-4 py-4">
           <Skills
-            icon={
-              <FaReact className="h-24 w-36 bg-secondaryColor text-yellow-500" />
-            }
+            icon={<FaReact className="h-24 w-36 bg-secondaryColor" />}
             skillName={"React"}
           />
           <Skills
-            icon={
-              <FaCss3Alt className="h-24 w-36 bg-secondaryColor text-yellow-500" />
-            }
-            skillName={"C programming"}
+            icon={<FaCss3Alt className="h-24 w-36 bg-secondaryColor" />}
+            skillName={"C"}
           />
         </div>
-        <div className="flex justify-between pr-4 py-4">
+        <div className="flex flex-col lg:flex-row gap-6 justify-between pr-4 py-4">
           <Skills
-            icon={
-              <TbBrandCpp className="h-24 w-36 bg-secondaryColor text-yellow-500" />
-            }
+            icon={<TbBrandCpp className="h-24 w-36 bg-secondaryColor" />}
             skillName={"C++"}
           />
           <Skills
-            icon={
-              <FaJava className="h-24 w-36 bg-secondaryColor text-yellow-500" />
-            }
+            icon={<FaJava className="h-24 w-36 bg-secondaryColor" />}
             skillName={"Java"}
           />
         </div>
