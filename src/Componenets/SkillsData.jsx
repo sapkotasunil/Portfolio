@@ -16,6 +16,55 @@ import { GrMysql } from "react-icons/gr";
 import { FaFlutter } from "react-icons/fa6";
 
 const SkillsData = () => {
+  const skillDatas = [
+    {
+      icon: <FaHtml5 className=" h-[100%] w-12 lg:w-24  bg-secondaryColor" />,
+      skillName: "HTML",
+    },
+    {
+      icon: <FaCss3Alt className="h-[100%] w-12 lg:w-24 bg-secondaryColor" />,
+      skillName: "CSS",
+    },
+    {
+      icon: (
+        <IoLogoJavascript className="h-[100%] w-12 lg:w-24 bg-secondaryColor" />
+      ),
+      skillName: "JavaScript",
+    },
+    {
+      icon: (
+        <RiTailwindCssFill className="h-[100%] w-12 lg:w-24 bg-secondaryColor" />
+      ),
+      skillName: "Tailwind",
+    },
+    {
+      icon: <FaReact className="h-[100%] w-12 lg:w-24 bg-secondaryColor" />,
+      skillName: "React",
+    },
+    {
+      icon: <FaCss3Alt className="h-[100%] w-12 lg:w-24 bg-secondaryColor" />,
+      skillName: "C",
+    },
+    {
+      icon: <IoMdLeaf className="h-[100%] w-12 lg:w-24 bg-secondaryColor" />,
+      skillName: "Mango DB",
+    },
+    {
+      icon: (
+        <PiFramerLogoFill className="h-[100%] w-12 lg:w-24 bg-secondaryColor" />
+      ),
+      skillName: "Motion",
+    },
+    {
+      icon: <GrMysql className="h-[100%] w-12 lg:w-24 bg-secondaryColor" />,
+      skillName: "MY SQL",
+    },
+    {
+      icon: <FaFlutter className="h-[100%] w-12 lg:w-24 bg-secondaryColor" />,
+      skillName: "Flutter",
+    },
+  ];
+
   return (
     <>
       <div>
@@ -25,104 +74,12 @@ const SkillsData = () => {
         </h1>
       </div>
       <div className="max-w-[95vw] lg:max-w[45vw]">
-        <div className="flex flex-col lg:flex-row gap-3 lg:gap-6  justify-between  pr-4 pt-3 lg:py-4">
-          <Skills
-            icon={
-              <FaHtml5 className=" h-[100%] w-12 lg:w-24  bg-secondaryColor" />
-            }
-            skillName={"HTML"}
-          />
-
-          <Skills
-            icon={
-              <FaCss3Alt className="h-[100%] w-12 lg:w-24 bg-secondaryColor" />
-            }
-            skillName={"CSS"}
-          />
-        </div>
-        <div className=" justify-between flex flex-col lg:flex-row gap-3 lg:gap-6 pr-4 pt-3 lg:py-4">
-          <Skills
-            icon={
-              <IoLogoJavascript className="h-[100%] w-12 lg:w-24 bg-secondaryColor" />
-            }
-            skillName={"JavaScript"}
-          />
-          <Skills
-            icon={
-              <RiTailwindCssFill className="h-[100%] w-12 lg:w-24 bg-secondaryColor" />
-            }
-            skillName={"Tailwind"}
-          />
-        </div>
-        <div className="flex flex-col lg:flex-row gap-3 lg:gap-6 justify-between pr-4 pt-3 lg:py-4">
-          <Skills
-            icon={
-              <FaReact className="h-[100%] w-12 lg:w-24 bg-secondaryColor" />
-            }
-            skillName={"React"}
-          />
-          <Skills
-            icon={
-              <FaCss3Alt className="h-[100%] w-12 lg:w-24 bg-secondaryColor" />
-            }
-            skillName={"C"}
-          />
-        </div>
-        <div className="flex flex-col lg:flex-row gap-3 lg:gap-6 justify-between pr-4 pt-3 lg:py-4">
-          <Skills
-            icon={
-              <TbBrandCpp className="h-[100%] w-12 lg:w-24 bg-secondaryColor" />
-            }
-            skillName={"C++"}
-          />
-          <Skills
-            icon={
-              <FaJava className="h-[100%] w-12 lg:w-24 bg-secondaryColor" />
-            }
-            skillName={"Java"}
-          />
-        </div>
-        <div className="flex flex-col lg:flex-row gap-3 lg:gap-6 justify-between pr-4 pt-3 lg:py-4">
-          <Skills
-            icon={
-              <FaNodeJs className="h-[100%] w-12 lg:w-24 bg-secondaryColor" />
-            }
-            skillName={"Node JS"}
-          />
-          <Skills
-            icon={
-              <SiExpress className="h-[100%] w-12 lg:w-24 bg-secondaryColor" />
-            }
-            skillName={"Express Js"}
-          />
-        </div>
-        <div className="flex flex-col lg:flex-row gap-3 lg:gap-6 justify-between pr-4 pt-3 lg:py-4">
-          <Skills
-            icon={
-              <IoMdLeaf className="h-[100%] w-12 lg:w-24 bg-secondaryColor" />
-            }
-            skillName={"Mango DB"}
-          />
-          <Skills
-            icon={
-              <PiFramerLogoFill className="h-[100%] w-12 lg:w-24 bg-secondaryColor" />
-            }
-            skillName={"Framer Motion"}
-          />
-        </div>
-        <div className="flex flex-col lg:flex-row gap-3 lg:gap-6  justify-between pr-4 pt-3 lg:py-4">
-          <Skills
-            icon={
-              <GrMysql className="h-[100%] w-12 lg:w-24 bg-secondaryColor" />
-            }
-            skillName={"MY SQL"}
-          />
-          <Skills
-            icon={
-              <FaFlutter className="h-[100%] w-12 lg:w-24 bg-secondaryColor" />
-            }
-            skillName={"Flutter"}
-          />
+        <div className="flex flex-wrap  lg:gap-x-6 lg:gap-y-2">
+          {skillDatas.map((skill, key) => {
+            return (
+              <Skills icon={skill.icon} skillName={skill.skillName} id={key} />
+            );
+          })}
         </div>
       </div>
     </>

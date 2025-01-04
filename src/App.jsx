@@ -7,13 +7,13 @@ import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Projects from "./Pages/Projects";
 import { ScrollText } from "./Componenets/ScrollText";
+import SkillsData from "./Componenets/SkillsData";
 
 const App = () => {
   return (
     <BrowserRouter>
       <div className="px-5 lg:px-24">
         <Header />
-
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
