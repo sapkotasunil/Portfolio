@@ -64,6 +64,17 @@ const SkillsData = () => {
       skillName: "Flutter",
     },
   ];
+  const Skills = ({ icon, skillName }) => (
+    <motion.div
+      className="skill-item flex items-center gap-4 mb-4"
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      <span className="text-2xl">{icon}</span>
+      <h3 className="text-lg font-semibold">{skillName}</h3>
+    </motion.div>
+  );
 
   return (
     <>
