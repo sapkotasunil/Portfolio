@@ -32,13 +32,13 @@ const Header = () => {
         </button>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex items-center gap-10">
+        <div className="hidden lg:flex items-center gap-10 p:3">
           <NavLink
             to="/"
             className={({ isActive }) =>
               isActive
-                ? "text-green-500 scale-[1.1] duration-200"
-                : "hover:text-green-500 scale-100 duration-200"
+                ? "text-green-500 scale-125 transform transition-transform duration-300 ease-linear"
+                : "hover:text-green-500 transform transition-transform duration-300 ease-linear hover:scale-125"
             }
           >
             Home
@@ -47,8 +47,8 @@ const Header = () => {
             to="/about"
             className={({ isActive }) =>
               isActive
-                ? "text-green-500 scale-[1.1] duration-200"
-                : "hover:text-green-500 scale-100 duration-200"
+                ? "text-green-500 scale-125 transform transition-transform duration-300 ease-linear"
+                : "hover:text-green-500 transform transition-transform duration-300 ease-linear hover:scale-125"
             }
           >
             About
@@ -57,8 +57,8 @@ const Header = () => {
             to="/projects"
             className={({ isActive }) =>
               isActive
-                ? "text-green-500 scale-[1.1] duration-200"
-                : "hover:text-green-500 scale-100 duration-200"
+                ? "text-green-500 scale-125 transform transition-transform duration-300 ease-linear"
+                : "hover:text-green-500 transform transition-transform duration-300 ease-linear hover:scale-125"
             }
           >
             Projects
@@ -67,8 +67,8 @@ const Header = () => {
             to="/contact"
             className={({ isActive }) =>
               isActive
-                ? "text-green-500 scale-[1.1] duration-200"
-                : "hover:text-green-500 scale-100 duration-200 "
+                ? "text-green-500 scale-125 transform transition-transform duration-300 ease-linear"
+                : "hover:text-green-500 transform transition-transform duration-300 ease-linear hover:scale-125"
             }
           >
             Contact

@@ -21,7 +21,7 @@ const Contact = () => {
     <div className=" pt-8">
       <h1 className="text-5xl font-semibold">Contact</h1>
       <h1 className="text-lg text-gray-500">Reach Out Me</h1>
-      <div className="flex justify-center mt-10   min-h-[40vh] px-4">
+      <div className="flex justify-center mt-10   min-h-[40vh] lg:px-4">
         <div className=" shadow-lg   bg-secondaryColor rounded-lg p-6 w-full lg:max-w-[50%] max-w-[95%]  border border-solid border-white">
           <h2 className="text-2xl  bg-secondaryColor font-bold text-start ">
             Let's get in touch. Leave me your message.
@@ -31,7 +31,7 @@ const Contact = () => {
             onSubmit={handleSubmit}
             className="  bg-secondaryColor space-y-4 mt-3"
           >
-            <div>
+            <div className="bg-secondaryColor">
               <label
                 htmlFor="name"
                 className="block bg-secondaryColor text-sm font-medium"
@@ -49,7 +49,7 @@ const Contact = () => {
                 className="mt-1  bg-secondaryColor block w-full p-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
               />
             </div>
-            <div>
+            <div className="bg-secondaryColor">
               <label
                 htmlFor="email"
                 className="block  bg-secondaryColor text-sm font-medium "
@@ -67,7 +67,7 @@ const Contact = () => {
                 className="mt-1 block w-full  bg-secondaryColor p-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
               />
             </div>
-            <div>
+            <div className="bg-secondaryColor">
               <label
                 htmlFor="message"
                 className="block  bg-secondaryColor text-sm font-medium "
