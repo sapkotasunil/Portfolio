@@ -12,7 +12,7 @@ const Header = () => {
   };
 
   return (
-    <nav className="relative px-4 py-4 mt-8 border-solid border-primaryColor lg:border-none border-b">
+    <nav className="relative px-4 py-4 lg:mt-8  border-solid border-primaryColor lg:border-none border-b">
       <div className="flex items-center justify-between">
         <Link className="font-logoFont font-semibold text-xl" to="/">
           Sunil
@@ -21,7 +21,7 @@ const Header = () => {
         {/* Mobile menu button */}
         <button
           onClick={toggleMenu}
-          className="lg:hidden p-2 rounded-md hover:bg-gray-100"
+          className="lg:hidden p-2 rounded-md hover:bg-green-500"
           aria-label="Toggle menu"
         >
           {isMenuOpen ? (

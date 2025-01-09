@@ -12,7 +12,7 @@ import SkillsData from "./Componenets/SkillsData";
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="px-5 lg:px-24">
+      <div className="px-1 lg:px-24">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
