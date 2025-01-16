@@ -22,6 +22,14 @@ const SkillsData = () => {
       skillName: "HTML",
     },
     {
+      icon: <FaNodeJs className=" h-[100%] w-12 lg:w-24  bg-secondaryColor" />,
+      skillName: "Node JS",
+    },
+    {
+      icon: <SiExpress className=" h-[100%] w-12 lg:w-24  bg-secondaryColor" />,
+      skillName: "Express js",
+    },
+    {
       icon: <FaCss3Alt className="h-[100%] w-12 lg:w-24 bg-secondaryColor" />,
       skillName: "CSS",
     },
@@ -77,7 +85,11 @@ const SkillsData = () => {
         <div className="flex flex-wrap  lg:gap-x-6 lg:gap-y-2">
           {skillDatas.map((skill, key) => {
             return (
-              <Skills icon={skill.icon} skillName={skill.skillName} key={key} />
+              <Skills
+                icon={skill.icon}
+                skillName={skill.skillName}
+                index={key}
+              />
             );
           })}
         </div>

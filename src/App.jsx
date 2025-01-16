@@ -5,9 +5,10 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
-import Projects from "./Pages/Projects";
+import Projects from "./Pages/ProjectSection";
 import { ScrollText } from "./Componenets/ScrollText";
 import SkillsData from "./Componenets/SkillsData";
+import ProjectSection from "./Pages/ProjectSection";
 
 const App = () => {
   return (
@@ -18,7 +19,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/Contact" element={<Contact />} />
-          <Route path="/Projects" element={<Projects />} />
+          <Route path="/Projects" element={<ProjectSection />} />
         </Routes>
         <Footer />
       </div>

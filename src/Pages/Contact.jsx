@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { toast, ToastContainer } from "react-toastify";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -13,10 +14,23 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form Data:", formData);
-    alert("Thanks for contact us! We'll contact back as soon as possible");
+
     setFormData({ name: "", email: "", message: "" });
+    toast.success(
+      `Thanks for contact us! We'll contact back as soon as possible 😊`,
+      {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      }
+    );
   };
+
   return (
     <div className=" pt-8">
       <h1 className="text-5xl font-semibold">Contact</h1>
@@ -119,6 +133,18 @@ const Contact = () => {
           </a>
         </div>
       </div>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </div>
   );
 };

@@ -70,13 +70,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="h-screen flex mt-5 ">
-          <div className=" w-[50%]  max-h-fit border-2 p-5 shadow border-solid border-secondaryColor">
-            <p className=" text-xl underline pb-7">Projects</p>
-            <div className="h-[20vh] w-[20vh] "></div>
-          </div>
-          <div className="w-[45%]"></div>
-        </div>
+        <div className="h-screen flex mt-5 "></div>
       </div>
     </>
   );
