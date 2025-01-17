@@ -62,21 +62,49 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const { name, email, message } = formData;
 
-    setFormData({ name: "", email: "", message: "" });
-    toast.success(
-      `Thanks for contact us! We'll contact back as soon as possible 😊`,
-      {
-        position: "top-right",
-        autoClose: 3000,
-        hideProgressBar: false,
-        closeOnClick: false,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "dark",
+    if (name && email && message) {
+      const res = fetch(
+        "https://portfolio-contact-e65f2-default-rtdb.firebaseio.com/ContactRecords.json",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name,
+            email,
+            message,
+          }),
+        }
+      );
+
+      if (res) {
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+        });
+        toast.success(
+          `Thanks for contact us! We'll contact back as soon as possible 😊`,
+          {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+          }
+        );
+      } else {
+        alert("please fill the data");
       }
-    );
+    } else {
+      alert("please fill the data");
+    }
   };
 
   return (
