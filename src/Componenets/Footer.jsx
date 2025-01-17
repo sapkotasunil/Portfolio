@@ -15,22 +15,38 @@ const Footer = () => {
             Copyright@2025
           </div> */}
           <div className="flex gap-1 items-center ">
-            <a href="https://www.facebook.com/sunil.sapkota.7161953">
+            <a
+              href="https://www.facebook.com/sunil.sapkota.7161953"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div className=" flex h-10 w-10">
                 <img className="" src="/fb.svg" alt="" />
               </div>
             </a>
-            <a href="https://www.instagram.com/sapkota268/">
+            <a
+              href="https://www.instagram.com/sapkota268/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div className="flex  h-7 w-10">
                 <img className="" src="/insta.webp" alt="" />
               </div>
             </a>
-            <a href="https://github.com/sapkotasunil">
+            <a
+              href="https://github.com/sapkotasunil"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div className="flex h-7  w-10">
                 <img className="" src="/github.svg" alt="" />
               </div>
             </a>
-            <a href="https://www.linkedin.com/in/sunil-sapkota-88026a32a/">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/sunil-sapkota-88026a32a/"
+            >
               <div className="flex h-10  w-10">
                 <img className="" src="/linkdln.svg" alt="" />
               </div>

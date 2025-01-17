@@ -4,7 +4,7 @@ import Education from "../Componenets/Education";
 
 const Educations = () => {
   return (
-    <div>
+    <div className="py-2">
       <div>
         <h1 className="text-3xl sm:text-4xl flex items-center gap-2 pt-12 lg:pt-24">
           <HiAcademicCap />

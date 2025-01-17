@@ -83,12 +83,13 @@ const SkillsData = () => {
       </div>
       <div className="max-w-[95vw] lg:max-w[45vw]">
         <div className="flex flex-wrap  lg:gap-x-6 lg:gap-y-2">
-          {skillDatas.map((skill, key) => {
+          {skillDatas.map((skill, idx) => {
             return (
               <Skills
                 icon={skill.icon}
                 skillName={skill.skillName}
-                index={key}
+                key={idx}
+                idx={idx}
               />
             );
           })}
