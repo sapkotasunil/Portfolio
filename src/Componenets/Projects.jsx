@@ -11,7 +11,7 @@ const projectsData = [
   {
     name: "Animated website",
     description: "A modern and beautifully animated website of Ghoda ghodi.",
-    image: "./ghodaghodi.png",
+    image: "./ghodaghodi.jpg",
     link: "https://ghodaghodibysunil.netlify.app/",
   },
   {
