@@ -127,12 +127,12 @@ const Contact = () => {
       >
         Reach Out Me
       </motion.h1>
-      <div className="flex justify-center mt-10   min-h-[40vh] lg:px-4">
+      <div className="flex justify-center mt-10 max-w-[90vw]   min-h-fit lg:px-4">
         <motion.div
           initial="hidden"
           animate="show"
           variants={variants}
-          className=" shadow-lg   bg-secondaryColor rounded-lg p-6 w-full lg:max-w-[50%] max-w-[95%]  border border-solid border-white"
+          className=" shadow-lg   bg-secondaryColor rounded-lg p-6 w-full md:max-w-[50%] max-w-[95%]  border border-solid border-white"
         >
           <motion.h2
             variants={formlabel}

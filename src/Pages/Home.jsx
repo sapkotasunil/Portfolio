@@ -33,8 +33,8 @@ const Home = () => {
   return (
     <>
       <div className=" pt-4">
-        <main className="flex justify-between  flex-col lg:flex-row max-h-fit">
-          <div className="lg:w-[55%] max-h-80 lg:max-h-fit">
+        <main className="flex justify-between  flex-col md:flex-row max-h-fit">
+          <div className="lg:w-[55%] max-h-[82vw] md:max-h-fit ">
             <motion.div
               initial={{ opacity: 0, y: -120 }}
               animate={{ opacity: 1, y: 0 }}
@@ -55,7 +55,7 @@ const Home = () => {
               ))}
             </motion.div>
             <motion.div variants={mainViewport} initial="hidden" animate="show">
-              <h2 className="text-[8vw] mt-1 lg:mt-4 font-medium lg:text-6xl ">
+              <h2 className="text-[8vw] mt-1 lg:mt-4 font-medium md:text-[4vw] lg:text-6xl ">
                 <motion.div variants={subViewport}>
                   Designing Innovation,
                 </motion.div>
@@ -67,7 +67,7 @@ const Home = () => {
                 </motion.div>
               </h2>
             </motion.div>
-            <div className="flex  flex-col lg:flex-row mb-24 gap-2 lg:gap-10 items-center lg:mt-32   max-w-fit mt-3  lg:px-3 py-1 rounded text-xl ">
+            <div className="flex    flex-col md:flex-row mb-24 md:mb-8 lg:mb-24 gap-2 md:gap-10 items-center md:mt-[12vw]   max-w-fit mt-3 lg:mt-[9vw]  lg:px-3 py-1 rounded text-xl ">
               <motion.a
                 initial={{ opacity: 0, y: 120 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -97,12 +97,12 @@ const Home = () => {
               </motion.a>
             </div>
           </div>
-          <div className="lg:w-[45%] max-h-fit mb-8 lg:mb-12">
+          <div className="lg:w-[45%]    md:min-h-fit mb-8 flex items-end md:pb-12 lg:mb-12">
             <motion.img
               animate={{ x: 0, opacity: 1, scale: 1 }}
               initial={{ x: 50, opacity: 0, scale: 0.7 }}
               transition={{ duration: 0.4, delay: 0.5 }}
-              className="lg:pt-28"
+              className="lg:pt-28 "
               src="./pp.png"
               alt=""
             />
@@ -169,9 +169,9 @@ const Home = () => {
                 whileInView={{
                   opacity: 1,
                   scale: 1,
-                  transition: { delay: index * 0.1 },
+                  transition: { delay: index * 0.1, duration: 0.2 },
                 }}
-                viewport={{ amount: "all", once: "true" }}
+                viewport={{ amount: "0.1", once: "true" }}
                 whileTap={{ scale: 0.95 }}
                 className="p-4 border-2 rounded-lg text-center text-lg font-semibold bg-secondaryColor border-primaryColor shadow-lg"
               >

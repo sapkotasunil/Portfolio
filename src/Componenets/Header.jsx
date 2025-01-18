@@ -28,7 +28,7 @@ const Header = () => {
             {/* Mobile menu button */}
             <button
               onClick={toggleMenu}
-              className="lg:hidden p-2 rounded-md hover:bg-green-500"
+              className="lg:hidden p-2 rounded-md"
               aria-label="Toggle menu"
             >
               {isMenuOpen ? (
@@ -116,7 +116,9 @@ const Header = () => {
                 to="/"
                 className={({ isActive }) =>
                   `block px-4 py-2 rounded-md ${
-                    isActive ? "bg-green-50 text-green-500" : "hover:bg-gray-50"
+                    isActive
+                      ? "bg-primaryColor text-black"
+                      : "hover:bg-primaryColor"
                   }`
                 }
                 onClick={() => setIsMenuOpen(false)}
@@ -127,7 +129,9 @@ const Header = () => {
                 to="/about"
                 className={({ isActive }) =>
                   `block px-4 py-2 rounded-md ${
-                    isActive ? "bg-green-50 text-green-500" : "hover:bg-gray-50"
+                    isActive
+                      ? "bg-primaryColor text-black"
+                      : "hover:bg-primaryColor"
                   }`
                 }
                 onClick={() => setIsMenuOpen(false)}
@@ -138,7 +142,9 @@ const Header = () => {
                 to="/projects"
                 className={({ isActive }) =>
                   `block px-4 py-2 rounded-md ${
-                    isActive ? "bg-green-50 text-green-500" : "hover:bg-gray-50"
+                    isActive
+                      ? "bg-primaryColor text-black"
+                      : "hover:bg-primaryColor"
                   }`
                 }
                 onClick={() => setIsMenuOpen(false)}
@@ -149,7 +155,9 @@ const Header = () => {
                 to="/contact"
                 className={({ isActive }) =>
                   `block px-4 py-2 rounded-md ${
-                    isActive ? "bg-green-50 text-green-500" : "hover:bg-gray-50"
+                    isActive
+                      ? "bg-primaryColor text-black"
+                      : "hover:bg-primaryColor"
                   }`
                 }
                 onClick={() => setIsMenuOpen(false)}
@@ -160,7 +168,7 @@ const Header = () => {
               {/* Social Links - Mobile */}
               <div className="flex flex-col space-y-2 pt-4 border-t">
                 <a
-                  className="flex items-center gap-2 px-4 py-2 hover:bg-gray-50 rounded-md"
+                  className="flex items-center gap-2 px-4 py-2 rounded-md"
                   href="https://www.linkedin.com/in/sunil-sapkota-88026a32a/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -169,12 +177,12 @@ const Header = () => {
                   <span>LinkedIn</span>
                 </a>
                 <a
-                  className="flex items-center gap-2 px-4 py-2 hover:bg-gray-50 rounded-md"
+                  className="flex items-center gap-2 px-4 py-2 rounded-md"
                   href="https://github.com/sapkotasunil"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaGithub className="w-5 h-5" />
+                  <FaGithub className="w-5 h-5 " />
                   <span>GitHub</span>
                 </a>
               </div>

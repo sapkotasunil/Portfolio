@@ -29,11 +29,14 @@ const Projects = ({ delayTime }) => {
         {projectsData.map((project, index) => (
           <motion.div
             key={index}
-            className=" rounded-lg border-2 border-solid border-secondaryColor py-6 px-2 shadow-lg overflow-hidden"
+            className=" hover:shadow-xl shadow-green-400 hover:shadow-green-400  rounded-lg border-2 border-solid border-secondaryColor py-6 px-2 shadow-lg overflow-hidden"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5, delay: delayTime + index * 0.4 }}
+            transition={{
+              duration: 0.5,
+              delay: index * 0.2,
+            }}
           >
             <img
               src={project.image}
