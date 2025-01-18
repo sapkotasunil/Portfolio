@@ -20,8 +20,8 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className=" flex h-10 w-10">
-                <img className="" src="/fb.svg" alt="" />
+              <div className=" flex h-7 w-10">
+                <img className="" src="/facebook.png" alt="" />
               </div>
             </a>
             <a
@@ -39,7 +39,7 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               <div className="flex h-7  w-10">
-                <img className="" src="/github.svg" alt="" />
+                <img className="" src="/github.png" alt="" />
               </div>
             </a>
             <a

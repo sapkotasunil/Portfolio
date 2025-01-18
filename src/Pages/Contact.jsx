@@ -1,6 +1,5 @@
-import { delay } from "motion";
 import { motion } from "motion/react";
-import { tr } from "motion/react-m";
+
 import React, { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 const variants = {
@@ -239,8 +238,8 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="flex h-10 w-10">
-              <img src="/fb.svg" alt="" />
+            <div className="flex h-7 lg:ml-2 w-10">
+              <img src="/facebook.png" alt="" />
             </div>
           </motion.a>
           <motion.a
@@ -260,7 +259,7 @@ const Contact = () => {
             rel="noopener noreferrer"
           >
             <div className="flex h-7 w-10">
-              <img src="/github.svg" alt="" />
+              <img src="/github.png" alt="" />
             </div>
           </motion.a>
           <motion.a
